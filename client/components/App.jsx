@@ -17,7 +17,7 @@ const App = () => {
         <Link to ="/seizure"><button>Seizure</button></Link>
         <Link to ="/spiders"><button>Spiders</button></Link>
       </div>
-      <div class="container">
+      <div className="container">
         <Route exact path="/ambulance" component={AmbulanceSim}/>
         <Route exact path="/car" component={CarAlarm}/>
         <Route exact path="/seizure" component={Seizure}/>
