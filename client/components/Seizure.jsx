@@ -16,8 +16,8 @@ class Seizure extends React.Component {
         this.state = {
             style : {
                 backgroundColor: 'black',
-                width: '1600px',
-                height: '1600px',
+                width: 'vw',
+                height: 'vh',
             },
             party: ''
         }
