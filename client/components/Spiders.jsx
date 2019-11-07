@@ -16,7 +16,6 @@ class Spiders extends React.Component {
                 width: randomSizedSpider(),
             }
         }
-        console.log('this.state:', this.state)
 
     }
 
