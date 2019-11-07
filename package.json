@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
+    "i": "^0.3.6",
     "nodemon": "^1.19.4",
     "react-router-dom": "^5.1.2",
     "superagent": "^5.0.2"
