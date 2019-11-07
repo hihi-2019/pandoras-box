@@ -44,9 +44,34 @@
 .carDiv {
     width: 200px;
     height: 200px;
-    }
+}
 
+#policeCar {
+    background-image: url('./images/copCar.jpg');
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    width: 800px;
+    height: 500px;
+}
 
-    #car {
-        background-color: black;
-    }
+.sirenLeft {
+    width: 80px;
+    height: 10px;
+    z-index: 1;
+    transform: translate(460px, 95px) rotate(13deg);
+}
+
+.sirenRight {
+    width: 80px;
+    height: 10px;
+    z-index: 1;
+    transform: translate(560px, 109px) rotate(13deg);
+}
+
+.rainbowSiren {
+    width: 150px;
+    height: 10px;
+    z-index: 1;
+    transform: translate(145px, 285px) rotate(19deg);
+}
+

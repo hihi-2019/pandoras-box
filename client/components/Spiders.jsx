@@ -28,7 +28,6 @@ class Spiders extends React.Component {
                 // visibility: 'hidden'
             }
         }
-        console.log('this.state:', this.state)
 
     }
 
