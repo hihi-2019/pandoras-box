@@ -6,6 +6,8 @@
     margin: 0;
 }
 
+/* CSS for seizure page */
+
 .party {
     z-index: 1;
     width: 1500px;
@@ -18,19 +20,26 @@
     font-size: 300px;
 }
 
+/* CSS for spider page */
+/* 
 #spiderWeb {
-    background-image: url('./images/spiderWebImg\ \(1\).jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
+    /* background-image: url('./images/spiderWebImg\ \(1\).jpg'); */
+   
+    /* background-color: black; */
+    /* background-size: 100% ; */
+    /* width:100%;
+    height:100vh; */
+
+    
     /* height: 100vh; */
+/* } */
 
+.spiderImg {
+    transition: all ease 1s;
+    
 }
 
-#car {
-    /* background-color: darkgreen; */
-}
-
+/* CSS for car page  */
 
 .carDiv {
     width: 200px;
