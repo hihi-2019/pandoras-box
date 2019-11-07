@@ -78,3 +78,8 @@
     border-radius: 25px;
 }
 
+.custom {
+  /* cursor: not-allowed; */
+  cursor: url('./images/mallet.png') 4 12, auto;
+}
+
