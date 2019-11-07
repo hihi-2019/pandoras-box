@@ -50,6 +50,7 @@
     height: 10px;
     z-index: 1;
     transform: translate(460px, 95px) rotate(13deg);
+    border-radius: 25px;
 }
 
 .sirenRight {
@@ -57,12 +58,14 @@
     height: 10px;
     z-index: 1;
     transform: translate(560px, 109px) rotate(13deg);
+    border-radius: 25px;
 }
 
 .rainbowSiren {
-    width: 150px;
+    width: 160px;
     height: 10px;
     z-index: 1;
     transform: translate(145px, 285px) rotate(19deg);
+    border-radius: 25px;
 }
 
