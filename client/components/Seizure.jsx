@@ -37,7 +37,7 @@ class Seizure extends React.Component {
                     backgroundColor: randomHexColor(),
                 }
             })
-        }, 100)
+        }, 1000)
     }
    
     partyTime = () => {

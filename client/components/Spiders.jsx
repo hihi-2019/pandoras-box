@@ -1,7 +1,7 @@
 import React from 'react'
 
 const randomSizedSpider = () => 
-`${Math.floor(Math.random() * 200) + 50}px`
+`${Math.floor(Math.random() * 600) + 100}px`
 
 //make a timer for spider to appear
 //randomise location of where it appears
@@ -13,20 +13,22 @@ class Spiders extends React.Component {
 
         this.state = {
             style : {
-            backgroundColor: 'orange',
-            width: randomSizedSpider(),
-            height: randomSizedSpider()
+                width: randomSizedSpider(),
             }
         }
+        console.log('this.state:', this.state)
+
     }
 
     render() {
        return (
-        <div className="componentDisplay">
-            <img src="./images/spider.png" alt=""/>
+        <div id="spiderWeb" className="componentDisplay" >
+            <img src="./images/spider.png" alt="" style={this.state.style}/>
         </div>
        )
     }
 }
 
 export default Spiders
+
+//how to animate the spider
