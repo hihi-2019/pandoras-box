@@ -83,3 +83,10 @@
   cursor: url('./images/mallet.png') 4 12, auto;
 }
 
+#car {
+    background-image: url('./images/car.jpeg');
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

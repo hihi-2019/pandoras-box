@@ -1,9 +1,8 @@
 import React from 'react'
-
+import Sound from 'react-sound';
 
 const randomHexColor = () =>
   `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
-
 
 class CarAlarm extends React.Component {
     constructor(props) {
@@ -12,31 +11,27 @@ class CarAlarm extends React.Component {
         // this.state = {
         //     style : {
         //     },
-
         // }
     }
 
     // alarmSounds = () => {
-    //     this.setState({
-            
+    //     this.setState({    
     //     })
-    // }
-
-
-    // activateLasers = () => {
-
     // }
 
     render() {
         return (
-         <div id="car" >
-             <div className="componentDisplay" >
-                <img src="./images/car.jpeg" alt="Old car"/>
-                {/* <audio onplay="alarmSound()">...</audio> */}
-            </div>
-            {/* <button onClick={alarmSound}>Make Sounds</button> */}
-            {/* <button onClick={activateLasers}>Activate Lasers</button> */}
-         </div>
+            <React.Fragment>
+                <div id="car" >
+                    <div className="componentDisplay" >
+                        {/* <img src="./images/car.jpeg" alt="Old car"/> */}
+                    </div>
+                    <Sound 
+                        url="/sounds/carAlarm.wav"
+                        playStatus={Sound.status.PLAYING}
+                    /> 
+                </div>
+            </React.Fragment>
         )
      }
 }
