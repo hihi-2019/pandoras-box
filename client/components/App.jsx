@@ -16,53 +16,65 @@ const App = () => {
           <div className="shortcuts">
             <div className="shortcut" id="home">
               <a href="#">
-              <img src="/icons/my-computer.png" />
-              <span>My Computer</span>
+                <img src="/icons/my-computer.png" />
+                <span>My Computer</span>
+              </a>
+            </div>
+            <div className="shortcut" id="home">
+              <a href="#">
+                <img src="/icons/recycle-bin.png" />
+                Recycle Bin
             </a>
             </div>
             <div className="shortcut" id="home">
               <a href="#">
-              <img src="/icons/recycle-bin.png" />
-              Recycle Bin
+                <img src="/icons/folder.png" />
+                1337 Hax
             </a>
             </div>
             <div className="shortcut" id="home">
               <a href="#">
-              <img src="/icons/folder.png" />
-              1337 Hax
-            </a>
-            </div>
-            <div className="shortcut" id="home">
-              <a href="#">
-              <img src="/icons/network-neighborgood.png" />
-              Network Neighborhood
+                <img src="/icons/network-neighborgood.png" />
+                Network Neighborhood
             </a>
             </div>
             <div className="shortcut" id="home">
               <Link to="/ambulance">
 
-                <img src="/icons/my-computer.png" />
-                <span>My Computer</span>
+                <img src="/icons/audio.png" />
+                <span>sirens.exe</span>
               </Link>
             </div>
             <div className="shortcut" id="home">
               <Link to="/seizure">
-                <img src="/icons/recycle-bin.png" />
-                Recycle Bin
+                <img src="/icons/lsd.gif" />
+                lsd.exe
             </Link>
             </div>
             <div className="shortcut" id="home">
               <Link to="/car">
-                <img src="/icons/folder.png" />
-                1337 Hax
+                <img src="/icons/cop.png" />
+                oink.exe
             </Link>
             </div>
             <div className="shortcut" id="home">
               <Link to="/spiders">
 
-                <img src="/icons/network-neighborgood.png" />
-                Network Neighborhood
+                <img src="/icons/spider.png" />
+                spiderm0n.exe
             </Link>
+            </div>
+            <div className="shortcut" id="home">
+              <a href="#">
+                <img src="/icons/defragment.png" />
+                <span>Defragment</span>
+              </a>
+            </div>
+            <div className="shortcut" id="home">
+              <a href="#">
+                <img src="/icons/loic.png" />
+                <span>loic</span>
+              </a>
             </div>
           </div>
           <div className="frame">
