@@ -10,7 +10,8 @@
     "client": "webpack-dev-server --hot --inline",
     "dev": "nodemon server & webpack --watch",
     "server": "node server",
-    "start": "webpack && node server",
+    "build": "webpack",
+    "start": "node server",
     "test": "jest --watchAll"
   },
   "babel": {
@@ -33,10 +34,7 @@
     "i": "^0.3.6",
     "react-router-dom": "^5.1.2",
     "webpack": "^4.29.6",
-    "superagent": "^5.0.2"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.4",
+    "superagent": "^5.0.2",
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
@@ -51,6 +49,9 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "webpack-cli": "^3.3.0",
+    "nodemon": "^1.19.4",
     "webpack-dev-server": "^3.2.1"
+  },
+  "devDependencies": {
   }
 }
