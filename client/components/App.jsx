@@ -4,6 +4,7 @@ import AmbulanceSim from './AmbulanceSim'
 import CarAlarm from './CarAlarm'
 import Seizure from './Seizure'
 import Spiders from './Spiders'
+import CommanderKeen from './CommanderKeen'
 
 const App = () => {
   return (
@@ -16,26 +17,26 @@ const App = () => {
           <div className="shortcuts">
             <div className="shortcut" id="home">
               <a href="#">
-              <img src="/icons/my-computer.png" />
-              <span>My Computer</span>
+                <img src="/icons/my-computer.png" />
+                <span>My Computer</span>
+              </a>
+            </div>
+            <div className="shortcut" id="home">
+              <a href="#">
+                <img src="/icons/recycle-bin.png" />
+                Recycle Bin
             </a>
             </div>
             <div className="shortcut" id="home">
               <a href="#">
-              <img src="/icons/recycle-bin.png" />
-              Recycle Bin
+                <img src="/icons/folder.png" />
+                1337 Hax
             </a>
             </div>
             <div className="shortcut" id="home">
               <a href="#">
-              <img src="/icons/folder.png" />
-              1337 Hax
-            </a>
-            </div>
-            <div className="shortcut" id="home">
-              <a href="#">
-              <img src="/icons/network-neighborgood.png" />
-              Network Neighborhood
+                <img src="/icons/network-neighborgood.png" />
+                Network Neighborhood
             </a>
             </div>
             <div className="shortcut" id="home">
@@ -82,6 +83,7 @@ const App = () => {
               <Route exact path="/car" component={CarAlarm} />
               <Route exact path="/seizure" component={Seizure} />
               <Route exact path="/spiders" component={Spiders} />
+              <Route exact path="/keen" component={CommanderKeen} />
             </div>
           </div>
         </div>
@@ -96,16 +98,23 @@ const App = () => {
             <div className="taskbar-middle">
               <button className="active-window">
                 <img src="/icons/pyramid.png" />
+                <Link to="/">
                 Pandora's Box
+                </Link>
                 </button>
               <button className="inactive-window">
                 <img src="/icons/loic.png" />
                 Low Orbit Ion Cannon
                 </button>
+
               <button className="inactive-window">
-                <img src="/icons/commander-keen.png" />
+                
+                  <img src="/icons/commander-keen.png" />
+                  <Link to="/keen" >
                 Commander Keen
+                </Link>
                 </button>
+
             </div>
             <div className="taskbar-right">
 
