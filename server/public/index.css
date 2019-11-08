@@ -75,6 +75,8 @@ body{
 .shortcut > a > img
 {
     margin:0 auto;
+    width:32px;
+    height:32px;
 }
 
 .frame
