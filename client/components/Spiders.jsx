@@ -46,14 +46,12 @@ class Spiders extends React.Component {
 
     render() {
         return (
-            <div id="spiderWeb" className="componentDisplay" >
+            <div id="spiderWeb" className="componentDisplay custom" >
                 <h1>Squish the spider!</h1>
-                <img className="spiderImg" src="./images/spider.png" alt="" style={this.state.style} onMouseOver={this.moveSpider} />
+                <img className="spiderImg custom" src="./images/spider.png" alt="" style={this.state.style} onMouseOver={this.moveSpider} />
             </div>
         )
     }
 }
 
 export default Spiders
-
-//how to animate the spider
