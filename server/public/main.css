@@ -1,6 +1,6 @@
 .componentDisplay {
-    width: 1600px;
-    height: 1600px;
+    width: 100%;
+    height: 100%;
     z-index: 0;
     padding: 0;
     margin: 0;
@@ -10,14 +10,14 @@
 
 .party {
     z-index: 1;
-    width: 1500px;
-    height: 1500px;
+    width: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
 }
 
 .party h1 {
-    font-size: 300px;
+    font-size: 120px;
 }
 
 /* CSS for spider page */

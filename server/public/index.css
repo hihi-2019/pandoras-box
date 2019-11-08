@@ -1,0 +1,383 @@
+@font-face {
+    font-family: Windows95;
+    src: url('./m95-font.ttf');
+  }
+
+  a:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+body{
+    font-family: "Windows95", Arial, sans-serif;
+    font-smooth: never;
+    font-smoothing: none;
+    -webkit-font-smoothing: none;
+}
+
+.bsdo-div
+{
+    width:100%;
+    height:100%;
+    position: absolute;
+    /* z-index:10; */
+
+}
+
+.bsod
+{
+    width:100%;
+    height:100%;
+}
+
+.main
+{
+    background-image:url('./images/wallpaper.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: relative;
+    width:100vw;
+    height:100vh;
+}
+
+.main-top
+{
+    width:100%;
+    height:96%;
+    position: relative;
+}
+
+.shortcuts
+{
+    padding:20px 0px 0px 20px;
+    width:220px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.shortcut
+{
+    text-align: center;
+    font-size:12px;
+    width:50%;
+    flex-grow:1;
+    padding-top:30px;
+}
+
+.shortcut > a > img
+{
+    margin:0 auto;
+}
+
+.frame
+{
+    width:1200px;
+    height:700px;
+    position: absolute;
+    display:flex;
+    flex-direction:column;
+    top:100px;
+    right:200px;
+    border-left-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-right-color: rgb(5, 6, 8);
+    border-bottom-color: rgb(5, 6, 8);
+    box-shadow: rgba(0, 0, 0, 0.35) 4px 4px 10px 0px, rgb(223, 224, 227) 1px 1px 0px 1px inset, rgb(136, 140, 143) -1px -1px 0px 1px inset;
+    box-sizing: border-box;
+    background-color: rgb(206, 208, 207);
+    color: rgb(5, 6, 8);
+    padding: 2px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.frame-top
+{
+    line-height: 33px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 0px 0.5rem;
+    background: linear-gradient(to right, rgb(0, 0, 128), rgb(16, 52, 166));
+    display:flex;
+    justify-content:space-between;
+}
+
+.frame-top-left
+{
+    align-items: center;
+    display: flex;
+}
+
+.frame-top-left > img{
+    width:20px;
+    height:20px;
+    margin-right:8px;
+}
+
+.frame-top-right
+{
+    align-items: center;
+}
+
+.frame-top-right > button > span
+{
+    
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.frame-main
+{
+    background-color:white;
+    width:100%;
+    height:100%;
+}
+
+.window-close
+{
+    box-sizing: border-box;
+    background-color: rgb(206, 208, 207);
+    color: rgb(5, 6, 8);
+    border-left-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-right-color: rgb(5, 6, 8);
+    border-bottom-color: rgb(5, 6, 8);
+    box-shadow: rgb(223, 224, 227) 1px 1px 0px 1px inset, rgb(136, 140, 143) -1px -1px 0px 1px inset;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 27px;
+    width: 27px;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0px;
+    align-items: center;
+    text-align: center;
+    vertical-align: baseline;
+    margin-right: -6px; margin-top: 3px;
+}
+
+.window-close:active
+{
+    border-left-color: rgb(5, 6, 8);
+    border-top-color: rgb(5, 6, 8);
+    border-right-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    box-shadow: rgb(136, 140, 143) 1px 1px 0px 1px inset, rgb(223, 224, 227) -1px -1px 0px 1px inset;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.taskbar
+{
+    width:100%;
+    height:4%;
+    font-weight: bold;
+    display:flex;
+    border-left-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-right-color: rgb(5, 6, 8);
+    border-bottom-color: rgb(5, 6, 8);
+    box-shadow: rgba(0, 0, 0, 0.35) 4px 4px 10px 0px, rgb(223, 224, 227) 1px 1px 0px 1px inset, rgb(136, 140, 143) -1px -1px 0px 1px inset;
+    box-sizing: border-box;
+    background-color: rgb(206, 208, 207);
+    color: rgb(5, 6, 8);
+    border-style: solid;
+    border-width: 2px;
+
+}
+
+.taskbar-left
+{
+    height:100%;
+    width:6%;
+}
+
+.start-button
+{
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    background-color: rgb(206, 208, 207);
+    color: rgb(5, 6, 8);
+    border-left-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-right-color: rgb(5, 6, 8);
+    border-bottom-color: rgb(5, 6, 8);
+    box-shadow: rgb(223, 224, 227) 1px 1px 0px 1px inset, rgb(136, 140, 143) -1px -1px 0px 1px inset;
+    position: relative;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0px 0.5rem;
+}
+
+.start-button > img
+{
+    width:20px;
+    height:20px;
+    margin-right:8px;
+}
+
+.start-button:active
+{
+    box-sizing: border-box;
+    background-color: rgb(206, 208, 207);
+    color: rgb(5, 6, 8);
+    border-left-color: rgb(5, 6, 8);
+    border-top-color: rgb(5, 6, 8);
+    border-right-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    box-shadow: rgb(136, 140, 143) 1px 1px 0px 1px inset, rgb(223, 224, 227) -1px -1px 0px 1px inset;
+    position: relative;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 2px 0.5rem 0px;
+}
+
+.taskbar-middle
+{
+    width:82%;
+    height:100%;
+    display:flex;
+    /* background-color:rgba(253, 0, 253, 0.104); */
+
+}
+
+.taskbar-right
+{
+    width:10%;
+    height:100%;
+    /* background-color:rgba(253, 0, 253, 0.404); */
+}
+
+.active-window
+{
+    height:100%;
+    width:15%;
+    box-sizing: border-box;
+    background-color: rgb(206, 208, 207);
+    color: rgb(5, 6, 8);
+    border-left-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-right-color: rgb(5, 6, 8);
+    border-bottom-color: rgb(5, 6, 8);
+    box-shadow: rgb(223, 224, 227) 1px 1px 0px 1px inset, rgb(136, 140, 143) -1px -1px 0px 1px inset;
+    position: relative;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0px 0.5rem;
+}
+
+.active-window > img
+{
+    width:20px;
+    height:20px;
+    margin-right:8px;
+}
+
+.active-window:active
+{
+    box-sizing: border-box;
+    background-color: rgb(206, 208, 207);
+    color: rgb(5, 6, 8);
+    border-left-color: rgb(5, 6, 8);
+    border-top-color: rgb(5, 6, 8);
+    border-right-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    box-shadow: rgb(136, 140, 143) 1px 1px 0px 1px inset, rgb(223, 224, 227) -1px -1px 0px 1px inset;
+    position: relative;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 2px 0.5rem 0px;
+}
+
+.inactive-window
+{
+    height:100%;
+    width:15%;
+    box-sizing: border-box;
+    background-color: rgb(197, 197, 197);
+    color: rgb(5, 6, 8);
+    border-left-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-right-color: rgb(5, 6, 8);
+    border-bottom-color: rgb(5, 6, 8);
+    box-shadow: rgb(160, 161, 163) 1px 1px 0px 1px inset, rgb(136, 140, 143) -1px -1px 0px 1px inset;
+    position: relative;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0px 0.5rem;
+}
+
+.inactive-window > img
+{
+    width:20px;
+    height:20px;
+    margin-right:8px;
+}
+
+.inactive-window:active
+{
+    box-sizing: border-box;
+    background-color: rgb(206, 208, 207);
+    color: rgb(5, 6, 8);
+    border-left-color: rgb(5, 6, 8);
+    border-top-color: rgb(5, 6, 8);
+    border-right-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    box-shadow: rgb(136, 140, 143) 1px 1px 0px 1px inset, rgb(223, 224, 227) -1px -1px 0px 1px inset;
+    position: relative;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 2px 0.5rem 0px;
+}
