@@ -1,21 +1,17 @@
 import React from 'react'
 
 const randomSizedSpider = () =>
-    `${Math.floor(Math.random() * 600) + 100}px`
+    `${Math.floor(Math.random() * 150) + 100}px`
 
 const randomDegrees = () =>
     `${Math.floor(Math.random() * 360)}deg`
 
 const randomX = () =>
-    `${Math.floor(Math.random() * 900)}`
+    `${Math.floor(Math.random() * 1000)}`
 
 const randomY = () =>
-    `${Math.floor(Math.random() * +600)}`
+    `${Math.floor(Math.random() * 700)}`
 
-
-//make a timer for spider to appear
-//randomise location of where it appears
-//randomise direction it faces
 
 class Spiders extends React.Component {
     constructor(props) {
@@ -23,8 +19,9 @@ class Spiders extends React.Component {
 
         this.state = {
             style: {
-                width: '15%',
-                transform: `translateX(${randomX()}px) translateY(${randomY()}px)`,
+                width: `${randomSizedSpider()}`,
+                transform: `translateX(${randomX()}px) translateY(${randomY()}px)`
+                
                 // visibility: 'hidden'
             }
         }
@@ -32,11 +29,10 @@ class Spiders extends React.Component {
     }
 
     moveSpider = (event) => {
-        let degs = randomDegrees()
         this.setState({
             style: {
                 transform: `translateX(${randomX()}px) translateY(${randomY()}px)`,
-                maxWidth: '15%',
+                width: 'randomSizedSpider()'
                 // visibility: 'visible'
 
             }

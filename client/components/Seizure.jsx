@@ -7,7 +7,7 @@ const randomHexColor = () =>
 // const flashBackground = () => setInterval(()=> flash(), 100)
 
 
-const partyArray = ["Party!!!", "wahoo!!!", "Rave to the grave!"]
+const partyArray = ["Party!!!", "Wahoo!!!", "Rave to the grave!", "Party at Robs House!"]
 
 class Seizure extends React.Component {
     constructor(props) {
