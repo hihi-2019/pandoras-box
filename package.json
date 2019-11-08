@@ -15,7 +15,7 @@
     "test": "jest --watchAll"
   },
   "babel": {
-    "presets": [
+    "presets": [  
       "@babel/preset-env",
       "@babel/preset-react"
     ],

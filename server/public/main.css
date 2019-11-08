@@ -83,3 +83,11 @@
   cursor: url('./images/mallet.png') 4 12, auto;
 }
 
+/* CSS for commander Keen */
+
+#keen {
+    background-image: url('./images/ck1.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
