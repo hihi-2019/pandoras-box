@@ -5,6 +5,7 @@ import CarAlarm from './CarAlarm'
 import Seizure from './Seizure'
 import Spiders from './Spiders'
 import CommanderKeen from './CommanderKeen'
+import Bees from './Bees'
 
 const App = () => {
   return (
@@ -66,10 +67,10 @@ const App = () => {
             </Link>
             </div>
             <div className="shortcut" id="home">
-              <a href="#">
+              <Link to="/bees">
                 <img src="/icons/defragment.png" />
-                <span>Defragment</span>
-              </a>
+                Defragment
+              </Link>
             </div>
             <div className="shortcut" id="home">
               <a href="#">
@@ -96,6 +97,7 @@ const App = () => {
               <Route exact path="/seizure" component={Seizure} />
               <Route exact path="/spiders" component={Spiders} />
               <Route exact path="/keen" component={CommanderKeen} />
+              <Route exact path="/bees" component={Bees} />
             </div>
           </div>
         </div>

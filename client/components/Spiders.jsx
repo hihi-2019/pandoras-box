@@ -12,7 +12,6 @@ const randomX = () =>
 const randomY = () =>
     `${Math.floor(Math.random() * 700)}`
 
-
 class Spiders extends React.Component {
     constructor(props) {
         super(props)
