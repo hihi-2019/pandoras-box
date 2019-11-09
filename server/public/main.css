@@ -102,6 +102,7 @@
 
 .beeImg {
     transition: all cubic-bezier(.19,.78,.08,.81) 1s;
+    position: relative;
     
 }
 

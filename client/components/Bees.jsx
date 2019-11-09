@@ -4,10 +4,12 @@ const randomDegrees = () =>
     `${Math.floor(Math.random() * 360)}`
 
 const randomX = () =>
-    `${Math.floor(Math.random() * 100)}`
+    `${Math.floor(Math.random() * 100)+300}`
 
 const randomY = () =>
-    `${Math.floor(Math.random() * 100)}`
+    `${Math.floor(Math.random() * 100)+300}`
+
+ 
 
 class Bees extends React.Component {
     constructor(props) {
@@ -15,52 +17,32 @@ class Bees extends React.Component {
 
         this.state = {
             style: {
-                width: "3%",
-                transform: ''
-                // transform: `translateX(${randomX()}px) translateY(${randomY()}px) rotate(${randomDegrees()}deg)`
-            },
-            x: 0,
-            y: 0,
+                width: "5%",
+                // transform: ''
+                transform: `translateX(${randomX()}px) translateY(${randomY()}px) rotate(${randomDegrees()}deg)`
+            }
+            
         }
         this.moveBee = this.moveBee.bind(this)
-        this.updateCoordinates = this.updateCoordinates.bind(this)
-
     }
-    // moveBee = () => {
-    //     this.setState({
-    //         style: {
-    //             width:"3%",
-    //             transform: `translateX(${randomX()}px) translateY(${randomY()}px) rotate(${randomDegrees()}deg)`
-    //         }
-    //     })
-    // }
+    
 
     moveBee = (e) => {
         this.setState({
             style: {
-                width: "3%",
-                transform: `translateX(${e.nativeEvent.offsetX}) translateY(${e.nativeEvent.offsetY})`
+                width: "5%",
+                transform: `translateX(${e.nativeEvent.offsetX}px) translateY(${e.nativeEvent.offsetY}px) rotate(${randomDegrees()}deg)`
             }
-
         })
     }
-
-    updateCoordinates = (e) => {
-        this.setState({
-            x: e.nativeEvent.offsetX,
-            y: e.nativeEvent.offsetY
-        })
-    }
-
-
 
 
     render() {
-        const { x, y } = this.state;
         return (
-            <div id="bees" className="componentDisplay" style={this.state} onMouseMove={this.updateCoordinates}>
-                <img className="beeImg" src="./images/bee.png" style={this.state.style} onMouseMove={this.moveBee} />
-                <h1>Mouse Coordinates x={x} y={y}</h1>
+            <div id="bees" className="componentDisplay" onMouseMove={this.moveBee}>
+
+                <img className="beeImg" src="./images/bee.png" style={this.state.style}/>
+
             </div>
         )
     }
