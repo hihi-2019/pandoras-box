@@ -100,7 +100,9 @@
 }
 
 #bees {
+    background-image: url('./images/bee-background.jpg');    
     width: 100%;
     height: 100%;
     cursor: url('/images/daisy.png'), auto;
+    background-size: cover;
 }
