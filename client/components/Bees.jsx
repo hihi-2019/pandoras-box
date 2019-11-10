@@ -19,7 +19,7 @@ class Bees extends React.Component {
             style: {
                 width: "5%",
                 // transform: ''
-                transform: `translateX(${randomX()}px) translateY(${randomY()}px) rotate(${randomDegrees()}deg)`
+                transform: `translateX(${randomX()}px) translateY(${randomY()}px)`
             }
             
         }
@@ -31,7 +31,7 @@ class Bees extends React.Component {
         this.setState({
             style: {
                 width: "5%",
-                transform: `translateX(${e.nativeEvent.offsetX}px) translateY(${e.nativeEvent.offsetY}px) rotate(${randomDegrees()}deg)`
+                transform: `translateX(${e.nativeEvent.offsetX}px) translateY(${e.nativeEvent.offsetY}px)`
             }
         })
     }

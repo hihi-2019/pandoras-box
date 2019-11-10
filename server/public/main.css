@@ -21,18 +21,10 @@
 }
 
 /* CSS for spider page */
-/* 
-#spiderWeb {
-    /* background-image: url('./images/spiderWebImg\ \(1\).jpg'); */
-   
-    /* background-color: black; */
-    /* background-size: 100% ; */
-    /* width:100%;
-    height:100vh; */
 
-    
-    /* height: 100vh; */
-/* } */
+#spiderWeb {
+    cursor: url('/images/mallet.png'), auto;
+}
 
 .spiderImg {
     transition: all cubic-bezier(.19,.78,.08,.81) 1s;
@@ -101,12 +93,14 @@
 }
 
 .beeImg {
-    transition: all cubic-bezier(.19,.78,.08,.81) 1s;
+    transition: all cubic-bezier(.19,.78,.08,.81) 3s;
     position: relative;
+    z-index: 2;
     
 }
 
 #bees {
     width: 100%;
     height: 100%;
+    cursor: url('/images/daisy.png'), auto;
 }
