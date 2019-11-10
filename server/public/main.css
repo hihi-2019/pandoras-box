@@ -96,7 +96,6 @@
     transition: all cubic-bezier(.19,.78,.08,.81) 3s;
     position: relative;
     z-index: 2;
-    
 }
 
 #bees {
